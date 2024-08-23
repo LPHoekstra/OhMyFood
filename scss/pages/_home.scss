@@ -29,3 +29,15 @@
         margin-bottom: 1.75rem;
     }
 }
+
+.functioning-section {
+    background-color: $secondary-background-color;
+    padding: 3rem 1.25rem 4.25rem 1.25rem;
+}
+
+.functioning-contenair {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.625rem;
+}

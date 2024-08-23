@@ -71,6 +71,33 @@ h2 {
   opacity: 0.15;
 }
 
+.functioning-card {
+  border-radius: 1.25rem;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+  background-color: #f6f6f6;
+  margin-left: 0.75rem;
+  gap: 1.375rem;
+  align-items: center;
+}
+.functioning-card__title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.functioning-card__number {
+  position: relative;
+  color: #ffffff;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #9356dc;
+  border-radius: 50%;
+  margin-left: -0.75rem;
+}
+
 .header {
   text-align: center;
   padding-top: 0.875rem;
@@ -108,6 +135,18 @@ h2 {
   font-weight: 300;
   margin-top: 1rem;
   margin-bottom: 1.75rem;
+}
+
+.functioning-section {
+  background-color: #ffffff;
+  padding: 3rem 1.25rem 4.25rem 1.25rem;
+}
+
+.functioning-contenair {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.625rem;
 }
 
 /*# sourceMappingURL=main.css.map */
