@@ -48,8 +48,8 @@ h2 {
   border-radius: 1.563rem;
   opacity: 0;
   transition: opacity 300ms ease-out;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
   will-change: opacity;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 .btn::after {
   content: "";
@@ -60,9 +60,9 @@ h2 {
   left: 0;
   border-radius: 1.563rem;
   opacity: 0;
-  background-color: #ffffff;
   transition: opacity 300ms ease-out;
   will-change: opacity;
+  background-color: #ffffff;
 }
 .btn:hover::before {
   opacity: 1;
@@ -139,6 +139,51 @@ h2 {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   z-index: 2;
   position: relative;
+}
+
+.footer {
+  padding: 1.375rem 1.563rem;
+  background-color: #353535;
+}
+.footer__title {
+  font-family: "Shrikhand", serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer-content-contenair {
+  display: flex;
+  flex-direction: column;
+  gap: 0.438rem;
+  margin-top: 1rem;
+}
+.footer-content-contenair__link {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.partnership-contenair {
+  display: flex;
+  flex-direction: column;
+  gap: 0.438rem;
+}
+.partnership-contenair__link {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.contact-contenair {
+  display: flex;
+  flex-direction: column;
+  gap: 0.438rem;
+}
+.contact-contenair__link {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 400;
 }
 
 .location-article {

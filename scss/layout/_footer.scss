@@ -1,0 +1,39 @@
+$default-font-weight: 400;
+$parthnership-font-weight: 500;
+
+@mixin content-contenair-footer($font-weight: $default-font-weight) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.438rem;
+
+    &__link {
+        font-size: 1rem;
+        color: $footer-text-color;
+        font-weight: $font-weight;
+    }
+}
+
+.footer {
+    padding: 1.375rem 1.563rem;
+    background-color: $footer-background-color;
+
+    &__title {
+        font-family: $secondary-font-family;
+        font-size: 1.125rem;
+        font-weight: $default-font-weight;
+        color: $footer-text-color;
+    }
+}
+
+.footer-content-contenair {
+    @include content-contenair-footer;
+    margin-top: 1rem;
+}
+
+.partnership-contenair {
+    @include content-contenair-footer($parthnership-font-weight);
+}
+
+.contact-contenair {
+    @include content-contenair-footer;
+}
