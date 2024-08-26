@@ -36,6 +36,7 @@
     border-top-right-radius: 0.938rem;
     overflow: hidden;
     aspect-ratio: 4 / 3;
+    max-height: 41.875rem;
     // height: 15.625rem;
     // height: calc(80vw * 0.75);
 
@@ -47,8 +48,8 @@
 
     &__new {
         position: absolute;
-        top: 13px;
-        right: 12px;
+        top: 0.813rem;
+        right: 0.75rem;
         z-index: 2;
         background-color: $tertiary-color;
         color: $new-font-color;
