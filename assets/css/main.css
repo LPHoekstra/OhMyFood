@@ -100,17 +100,30 @@ h2 {
 
 .restaurants-cards {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: flex-end;
   border-top-left-radius: 0.938rem;
   border-top-right-radius: 0.938rem;
   overflow: hidden;
   aspect-ratio: 4/3;
+  max-height: 41.875rem;
 }
 .restaurants-cards__img {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
+}
+.restaurants-cards__new {
+  position: absolute;
+  top: 0.813rem;
+  right: 0.75rem;
+  z-index: 2;
+  background-color: #99e2d0;
+  color: #008766;
+  padding: 0.438rem 0.625rem 0.375rem 0.625rem;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 .restaurants-cards__content {
   background-color: #ffffff;
@@ -130,6 +143,102 @@ h2 {
 .restaurants-cards__content .restaurants-cards__subtitle {
   font-size: 1.063rem;
   font-weight: 300;
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(0, 0);
+  }
+  60% {
+    transform: scale(1.4, 1.4);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.like {
+  height: 21px;
+  width: 23px;
+  background-image: url("./../../assets/images/logo/like.png");
+  background-repeat: no-repeat;
+  position: relative;
+  cursor: pointer;
+}
+.like::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 23px;
+  background-image: url("./../../assets/images/logo/union.png");
+  background-repeat: no-repeat;
+  transform: scale(0, 0);
+  transform-origin: center;
+}
+.like:hover::after {
+  animation: heart 200ms forwards;
+}
+
+@keyframes loading {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes contenair {
+  0% {
+    z-index: 9999;
+    opacity: 1;
+  }
+  50% {
+    z-index: 9999;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.loader {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+  z-index: -9999;
+  opacity: 0;
+  animation: contenair 2000ms;
+}
+.loader__border {
+  height: 30px;
+  width: 300px;
+  border-radius: 20px;
+  border: solid 2px #ff79da;
+  padding: 4px;
+}
+.loader__bar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.loader__bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  transform-origin: left;
+  animation: loading 1000ms;
 }
 
 .header {
@@ -159,9 +268,26 @@ h2 {
   margin-top: 1rem;
 }
 .footer-content-contenair__link {
+  position: relative;
   font-size: 1rem;
   color: #ffffff;
   font-weight: 400;
+  margin-right: auto;
+}
+.footer-content-contenair__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.125rem;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 200ms ease-out;
+}
+.footer-content-contenair__link:hover::after {
+  transform: scaleX(1);
 }
 
 .partnership-contenair {
@@ -170,9 +296,26 @@ h2 {
   gap: 0.438rem;
 }
 .partnership-contenair__link {
+  position: relative;
   font-size: 1rem;
   color: #ffffff;
   font-weight: 500;
+  margin-right: auto;
+}
+.partnership-contenair__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.125rem;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 200ms ease-out;
+}
+.partnership-contenair__link:hover::after {
+  transform: scaleX(1);
 }
 
 .contact-contenair {
@@ -181,9 +324,26 @@ h2 {
   gap: 0.438rem;
 }
 .contact-contenair__link {
+  position: relative;
   font-size: 1rem;
   color: #ffffff;
   font-weight: 400;
+  margin-right: auto;
+}
+.contact-contenair__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.125rem;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 200ms ease-out;
+}
+.contact-contenair__link:hover::after {
+  transform: scaleX(1);
 }
 
 .location-article {

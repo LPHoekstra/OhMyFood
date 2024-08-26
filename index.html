@@ -14,6 +14,12 @@
     </head>
 
     <body>
+        <div class="loader">
+            <div class="loader__border">
+                <div class="loader__bar"></div>
+            </div>
+        </div>
+
         <header class="header">
             <h1>ohmyfood</h1>
         </header>
@@ -24,7 +30,7 @@
                     src="./assets/images/logo/maps-logo.svg"
                     alt="logo de localisation"
                 />
-                <span class="location-section__content">Paris, Belleville</span>
+                <h2 class="location-article__content">Paris, Belleville</h2>
             </article>
 
             <section class="explore-section">
@@ -83,6 +89,7 @@
                             alt=""
                             class="restaurants-cards__img"
                         />
+                        <div class="restaurants-cards__new">Nouveau</div>
                         <div class="restaurants-cards__content">
                             <div>
                                 <h3 class="restaurants-cards__title">
@@ -90,18 +97,7 @@
                                 </h3>
                                 <p>Ménilmontant</p>
                             </div>
-                            <svg
-                                width="23"
-                                height="21"
-                                viewBox="0 0 23 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M12.7206 2.40551L12.7203 2.40576L11.8739 3.35732L11.5003 3.77727L11.1267 3.35732L10.2802 2.40576L10.2797 2.40514C8.28247 0.152585 5.09737 -0.169649 2.9764 1.80201C0.482212 4.1245 0.344816 8.32357 2.58455 10.8495L10.8987 20.2148C10.8987 20.2149 10.8988 20.2149 10.8988 20.2149C11.237 20.5955 11.7593 20.5955 12.0975 20.2149C12.0975 20.2149 12.0975 20.2149 12.0976 20.2148L20.4119 10.8493L20.412 10.8492C22.6556 8.32335 22.5183 4.12461 20.0243 1.80213L12.7206 2.40551ZM12.7206 2.40551C14.7223 0.15233 17.9032 -0.169452 20.024 1.80187L12.7206 2.40551Z"
-                                    stroke="#101010"
-                                />
-                            </svg>
+                            <div class="like"></div>
                         </div>
                     </article>
                     <article class="restaurants-cards">
@@ -110,6 +106,7 @@
                             alt=""
                             class="restaurants-cards__img"
                         />
+                        <div class="restaurants-cards__new">Nouveau</div>
                         <div class="restaurants-cards__content">
                             <div>
                                 <h3 class="restaurants-cards__title">
@@ -117,18 +114,7 @@
                                 </h3>
                                 <p>Charonne</p>
                             </div>
-                            <svg
-                                width="23"
-                                height="21"
-                                viewBox="0 0 23 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M12.7206 2.40551L12.7203 2.40576L11.8739 3.35732L11.5003 3.77727L11.1267 3.35732L10.2802 2.40576L10.2797 2.40514C8.28247 0.152585 5.09737 -0.169649 2.9764 1.80201C0.482212 4.1245 0.344816 8.32357 2.58455 10.8495L10.8987 20.2148C10.8987 20.2149 10.8988 20.2149 10.8988 20.2149C11.237 20.5955 11.7593 20.5955 12.0975 20.2149C12.0975 20.2149 12.0975 20.2149 12.0976 20.2148L20.4119 10.8493L20.412 10.8492C22.6556 8.32335 22.5183 4.12461 20.0243 1.80213L12.7206 2.40551ZM12.7206 2.40551C14.7223 0.15233 17.9032 -0.169452 20.024 1.80187L12.7206 2.40551Z"
-                                    stroke="#101010"
-                                />
-                            </svg>
+                            <div class="like"></div>
                         </div>
                     </article>
                     <article class="restaurants-cards">
@@ -144,18 +130,7 @@
                                 </h3>
                                 <p>Cité Rouge</p>
                             </div>
-                            <svg
-                                width="23"
-                                height="21"
-                                viewBox="0 0 23 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M12.7206 2.40551L12.7203 2.40576L11.8739 3.35732L11.5003 3.77727L11.1267 3.35732L10.2802 2.40576L10.2797 2.40514C8.28247 0.152585 5.09737 -0.169649 2.9764 1.80201C0.482212 4.1245 0.344816 8.32357 2.58455 10.8495L10.8987 20.2148C10.8987 20.2149 10.8988 20.2149 10.8988 20.2149C11.237 20.5955 11.7593 20.5955 12.0975 20.2149C12.0975 20.2149 12.0975 20.2149 12.0976 20.2148L20.4119 10.8493L20.412 10.8492C22.6556 8.32335 22.5183 4.12461 20.0243 1.80213L12.7206 2.40551ZM12.7206 2.40551C14.7223 0.15233 17.9032 -0.169452 20.024 1.80187L12.7206 2.40551Z"
-                                    stroke="#101010"
-                                />
-                            </svg>
+                            <div class="like"></div>
                         </div>
                     </article>
                     <article class="restaurants-cards">
@@ -171,18 +146,7 @@
                                 </h3>
                                 <p>Folie-Méricourt</p>
                             </div>
-                            <svg
-                                width="23"
-                                height="21"
-                                viewBox="0 0 23 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M12.7206 2.40551L12.7203 2.40576L11.8739 3.35732L11.5003 3.77727L11.1267 3.35732L10.2802 2.40576L10.2797 2.40514C8.28247 0.152585 5.09737 -0.169649 2.9764 1.80201C0.482212 4.1245 0.344816 8.32357 2.58455 10.8495L10.8987 20.2148C10.8987 20.2149 10.8988 20.2149 10.8988 20.2149C11.237 20.5955 11.7593 20.5955 12.0975 20.2149C12.0975 20.2149 12.0975 20.2149 12.0976 20.2148L20.4119 10.8493L20.412 10.8492C22.6556 8.32335 22.5183 4.12461 20.0243 1.80213L12.7206 2.40551ZM12.7206 2.40551C14.7223 0.15233 17.9032 -0.169452 20.024 1.80187L12.7206 2.40551Z"
-                                    stroke="#101010"
-                                />
-                            </svg>
+                            <div class="like"></div>
                         </div>
                     </article>
                 </div>
@@ -213,7 +177,11 @@
                     <a href="#" class="contact-contenair__link"
                         >Mentions légales</a
                     >
-                    <a href="#" class="contact-contenair__link">Contact</a>
+                    <a
+                        href="mailto:test@email.fr"
+                        class="contact-contenair__link"
+                        >Contact</a
+                    >
                 </div>
             </div>
         </footer>
