@@ -1,1 +1,5 @@
-
+@mixin widescreen() {
+    @media (min-width: 900px) {
+        @content;
+    }
+}

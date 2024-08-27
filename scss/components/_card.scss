@@ -11,6 +11,10 @@
     gap: 1.375rem;
     align-items: center;
 
+    @include widescreen {
+        flex: 1;
+    }
+
     &__title {
         font-size: 1rem;
         font-weight: 500;
@@ -37,8 +41,11 @@
     overflow: hidden;
     aspect-ratio: 4 / 3;
     max-height: 41.875rem;
-    // height: 15.625rem;
-    // height: calc(80vw * 0.75);
+
+    @include widescreen {
+        max-height: 15.625rem;
+        aspect-ratio: 0/0;
+    }
 
     &__img {
         max-width: 100%;

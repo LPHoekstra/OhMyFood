@@ -6,6 +6,10 @@ h1 {
     font-family: $secondary-font-family;
     font-size: 1.875rem;
     font-weight: 400;
+
+    @include widescreen {
+        font-size: 2.375rem;
+    }
 }
 
 h2 {
