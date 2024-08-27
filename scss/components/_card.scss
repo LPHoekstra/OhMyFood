@@ -87,3 +87,35 @@
         }
     }
 }
+
+.menu-cards {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.938rem;
+    background-color: $secondary-background-color;
+    padding: 0.813rem 0.938rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    gap: 0.313rem;
+
+    &__title {
+        font-weight: 500;
+        font-size: 1.125rem;
+    }
+
+    &__content-contenair {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    &__content {
+        font-weight: 300;
+        font-size: 0.938rem;
+    }
+
+    &__amount {
+        font-weight: bold;
+        font-size: 0.938rem;
+        color: $amount-text-color;
+    }
+}
