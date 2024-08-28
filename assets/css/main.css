@@ -293,7 +293,7 @@ a {
 .header {
   text-align: center;
   padding-top: 0.875rem;
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.313rem;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   z-index: 2;
   position: relative;
@@ -301,7 +301,15 @@ a {
 @media (min-width: 900px) {
   .header {
     box-shadow: none;
+    padding-top: 1.438rem;
+    padding-bottom: 1.563rem;
   }
+}
+.header__arrow {
+  position: absolute;
+  left: 23px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .footer {
@@ -595,6 +603,7 @@ a {
   font-size: 1rem;
   position: relative;
   padding-bottom: 0.75rem;
+  text-transform: uppercase;
 }
 .course-title::after {
   content: "";
