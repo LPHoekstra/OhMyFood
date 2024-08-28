@@ -90,16 +90,21 @@
 
 .menu-cards {
     display: flex;
-    flex-direction: column;
     border-radius: 0.938rem;
     background-color: $secondary-background-color;
-    padding: 0.813rem 0.938rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    gap: 0.313rem;
+    overflow: hidden;
+    position: relative;
+
+    > div {
+        width: 100%;
+        padding: 0.813rem 0.938rem;
+    }
 
     &__title {
         font-weight: 500;
         font-size: 1.125rem;
+        margin-bottom: 0.313rem;
     }
 
     &__content-contenair {
@@ -117,5 +122,38 @@
         font-weight: bold;
         font-size: 0.938rem;
         color: $amount-text-color;
+    }
+
+    &::after {
+        content: "";
+        width: 0;
+        transition: width 250ms ease-out;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        background-color: $tertiary-color;
+        background-image: url("./../../assets/images/logo/check.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        border-top-right-radius: 0.938rem;
+        border-bottom-right-radius: 0.938rem;
+        transform: translateX(100%);
+        transform-origin: right;
+        width: 59px;
+        height: 100%;
+        transition: transform 250ms ease-out;
+    }
+
+    &:hover {
+        &::after {
+            width: 73px;
+        }
+
+        &::before {
+            transform: translateX(0);
+        }
     }
 }

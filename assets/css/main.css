@@ -168,16 +168,20 @@ a {
 
 .menu-cards {
   display: flex;
-  flex-direction: column;
   border-radius: 0.938rem;
   background-color: #ffffff;
-  padding: 0.813rem 0.938rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  gap: 0.313rem;
+  overflow: hidden;
+  position: relative;
+}
+.menu-cards > div {
+  width: 100%;
+  padding: 0.813rem 0.938rem;
 }
 .menu-cards__title {
   font-weight: 500;
   font-size: 1.125rem;
+  margin-bottom: 0.313rem;
 }
 .menu-cards__content-contenair {
   display: flex;
@@ -192,6 +196,33 @@ a {
   font-weight: bold;
   font-size: 0.938rem;
   color: #353535;
+}
+.menu-cards::after {
+  content: "";
+  width: 0;
+  transition: width 250ms ease-out;
+}
+.menu-cards::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  background-color: #99e2d0;
+  background-image: url("./../../assets/images/logo/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-right-radius: 0.938rem;
+  border-bottom-right-radius: 0.938rem;
+  transform: translateX(100%);
+  transform-origin: right;
+  width: 59px;
+  height: 100%;
+  transition: transform 250ms ease-out;
+}
+.menu-cards:hover::after {
+  width: 73px;
+}
+.menu-cards:hover::before {
+  transform: translateX(0);
 }
 
 @keyframes heart {
