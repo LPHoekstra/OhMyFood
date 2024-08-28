@@ -623,4 +623,11 @@ a {
   margin-bottom: 2.5rem;
 }
 
+.restaurants-btn {
+  padding: 1rem 3rem;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /*# sourceMappingURL=main.css.map */

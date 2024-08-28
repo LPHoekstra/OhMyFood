@@ -1,4 +1,4 @@
-@mixin pseudo-elements() {
+@mixin btn-pseudo-elements() {
     content: "";
     position: absolute;
     width: 100%;
@@ -24,12 +24,12 @@
     margin: auto;
 
     &::before {
-        @include pseudo-elements();
+        @include btn-pseudo-elements();
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
     }
 
     &::after {
-        @include pseudo-elements();
+        @include btn-pseudo-elements();
         background-color: $btn-hover-color;
     }
 
