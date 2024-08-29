@@ -25,6 +25,9 @@
         font-family: $secondary-font-family;
         font-size: 1.75rem;
         font-weight: 400;
+        text-wrap: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
