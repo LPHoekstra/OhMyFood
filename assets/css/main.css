@@ -663,10 +663,19 @@ a {
   }
 }
 
+main {
+  background-color: #ffffff;
+}
+
 .main-img {
-  max-height: 17.125rem;
+  height: 17.125rem;
   width: 100%;
   object-fit: cover;
+}
+@media (min-width: 900px) {
+  .main-img {
+    height: 23.875rem;
+  }
 }
 
 .menu-section {
@@ -676,6 +685,13 @@ a {
   background-color: #f6f6f6;
   position: relative;
   margin-top: -3.375rem;
+}
+@media (min-width: 900px) {
+  .menu-section {
+    max-width: 1055px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .menu-header {
@@ -693,6 +709,20 @@ a {
   text-wrap: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media (min-width: 900px) {
+  .menu-header {
+    justify-content: center;
+    gap: 1.563rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .course-article {
+    max-width: 39.625rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .course-title {
