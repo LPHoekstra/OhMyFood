@@ -221,6 +221,11 @@ a {
   animation-delay: 2000ms;
 }
 
+.animation-10 {
+  animation: forwards animated-cards 250ms;
+  animation-delay: 2250ms;
+}
+
 .menu-cards {
   display: flex;
   border-radius: 0.938rem;

@@ -13,7 +13,7 @@ $next-animation: 0ms;
     }
 }
 
-@for $i from 1 through 9 {
+@for $i from 1 through 10 {
     .animation-#{$i} {
         animation: forwards animated-cards $time-animation;
         animation-delay: $next-animation;
