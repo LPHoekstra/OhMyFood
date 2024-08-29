@@ -96,26 +96,32 @@
     overflow: hidden;
     position: relative;
 
-    > div {
-        width: 100%;
+    &__content-contenair {
         padding: 0.813rem 0.938rem;
+        flex: 1;
+        overflow: hidden;
+        text-wrap: nowrap;
     }
 
     &__title {
         font-weight: 500;
         font-size: 1.125rem;
         margin-bottom: 0.313rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
-    &__content-contenair {
+    &__sub-and-amount-contenair {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
     }
 
-    &__content {
+    &__subtitle {
         font-weight: 300;
         font-size: 0.938rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     &__amount {
@@ -149,7 +155,7 @@
 
     &:hover {
         &::after {
-            width: 73px;
+            width: 59px;
         }
 
         &::before {

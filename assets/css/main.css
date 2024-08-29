@@ -174,23 +174,29 @@ a {
   overflow: hidden;
   position: relative;
 }
-.menu-cards > div {
-  width: 100%;
+.menu-cards__content-contenair {
   padding: 0.813rem 0.938rem;
+  flex: 1;
+  overflow: hidden;
+  text-wrap: nowrap;
 }
 .menu-cards__title {
   font-weight: 500;
   font-size: 1.125rem;
   margin-bottom: 0.313rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.menu-cards__content-contenair {
+.menu-cards__sub-and-amount-contenair {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
-.menu-cards__content {
+.menu-cards__subtitle {
   font-weight: 300;
   font-size: 0.938rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-cards__amount {
   font-weight: bold;
@@ -219,7 +225,7 @@ a {
   transition: transform 250ms ease-out;
 }
 .menu-cards:hover::after {
-  width: 73px;
+  width: 59px;
 }
 .menu-cards:hover::before {
   transform: translateX(0);
