@@ -20,7 +20,7 @@ h1 {
   font-weight: 400;
   color: #101010;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   h1 {
     font-size: 2.375rem;
   }
@@ -94,7 +94,7 @@ a {
   gap: 1.375rem;
   align-items: center;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .functioning-cards {
     flex: 1;
   }
@@ -125,7 +125,7 @@ a {
   justify-content: flex-end;
   height: 73.8vw;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .restaurants-cards__link {
     height: 251px;
   }
@@ -135,7 +135,7 @@ a {
   height: 66.7vw;
   object-fit: cover;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .restaurants-cards__img {
     height: 231px;
   }
@@ -402,7 +402,7 @@ a {
   z-index: 2;
   position: relative;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .header {
     box-shadow: none;
     padding-top: 1.438rem;
@@ -426,12 +426,12 @@ a {
   font-weight: 400;
   color: #ffffff;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .footer__title {
     order: 2;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .footer {
     display: flex;
     flex-direction: row;
@@ -448,7 +448,7 @@ a {
   gap: 0.438rem;
   margin-top: 1rem;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .footer-content-contenair {
     flex-direction: row;
     gap: 1rem;
@@ -476,7 +476,7 @@ a {
 .footer-content-contenair__link:hover::after {
   transform: scaleX(1);
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .footer-content-contenair {
     margin: 0;
     gap: 2.625rem;
@@ -488,7 +488,7 @@ a {
   flex-direction: column;
   gap: 0.438rem;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .partnership-contenair {
     flex-direction: row;
     gap: 1rem;
@@ -522,7 +522,7 @@ a {
   flex-direction: column;
   gap: 0.438rem;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .contact-contenair {
     flex-direction: row;
     gap: 1rem;
@@ -562,7 +562,7 @@ a {
   justify-content: center;
   gap: 1rem;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .location-article {
     box-shadow: none;
   }
@@ -580,7 +580,7 @@ a {
   flex-direction: column;
   text-align: center;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .explore-section {
     padding: 1.875rem 1.25rem 1.875rem 1.25rem;
   }
@@ -591,7 +591,7 @@ a {
     margin: auto;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .explore-section__title {
     font-size: 2.5rem;
   }
@@ -602,7 +602,7 @@ a {
   margin-top: 1rem;
   margin-bottom: 1.75rem;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .explore-section__subtitle {
     margin-top: 1.125rem;
     margin-bottom: 1.125rem;
@@ -613,7 +613,7 @@ a {
   background-color: #ffffff;
   padding: 3rem 1.25rem 4.25rem 1.25rem;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .functioning-section {
     padding: 3.125rem 1.25rem 3.125rem 1.25rem;
   }
@@ -629,7 +629,7 @@ a {
   gap: 1.5rem;
   margin-top: 1.625rem;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .functioning-contenair {
     max-width: 67.5rem;
     margin-right: auto;
@@ -642,7 +642,7 @@ a {
   padding: 3.375rem 1rem 4.125rem 1rem;
   background-color: #f6f6f6;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .restaurants-section {
     padding: 1.875rem 1rem 1.875rem 1rem;
   }
@@ -658,18 +658,13 @@ a {
   gap: 1.125rem;
   margin-top: 1.25rem;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .restaurants-contenair {
     max-width: 67.5rem;
     margin: 1.75rem auto 0 auto;
     display: grid;
     grid-template: 1fr 1fr/1fr 1fr;
-    gap: 50px;
-  }
-}
-@media (min-width: 1120px) {
-  .restaurants-contenair {
-    gap: 50px 100px;
+    gap: 3.125rem 6.25rem;
   }
 }
 
@@ -681,7 +676,7 @@ main {
   height: 17.125rem;
   overflow: hidden;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .main-img-contenair {
     height: 23.875rem;
   }
@@ -692,7 +687,7 @@ main {
   width: 100%;
   object-fit: cover;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .main-img {
     transform: translateY(-8rem);
     min-height: 32rem;
@@ -708,7 +703,7 @@ main {
   position: relative;
   margin-top: -3.375rem;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .menu-section {
     max-width: 1055px;
     margin-left: auto;
@@ -732,14 +727,14 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .menu-header {
     justify-content: center;
     gap: 1.563rem;
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .course-article {
     max-width: 39.625rem;
     margin-left: auto;
