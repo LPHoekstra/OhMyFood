@@ -2,13 +2,24 @@ main {
     background-color: $secondary-background-color;
 }
 
+.main-img-contenair {
+    height: 17.125rem;
+    overflow: hidden;
+
+    @include widescreen {
+        height: 23.875rem;
+    }
+}
+
 .main-img {
     height: 17.125rem;
     width: 100%;
     object-fit: cover;
 
     @include widescreen {
-        height: 23.875rem;
+        transform: translateY(-8rem);
+        min-height: 32rem;
+        height: 26.6vw;
     }
 }
 
