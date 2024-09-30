@@ -28,9 +28,13 @@ h1 {
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+p {
+  font-size: 1.125em;
+  font-weight: 300;
 }
 
 a {
@@ -40,60 +44,46 @@ a {
 .btn {
   position: relative;
   border: none;
-  border-radius: 1.563rem;
-  padding: 0.813rem 1.188rem;
+  border-radius: 1.563em;
+  padding: 0.813em 1.188em;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1em;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   color: #ffffff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   margin: auto;
-}
-.btn::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 1.563rem;
-  opacity: 0;
-  transition: opacity 300ms ease-out;
-  will-change: opacity;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  min-width: 11.625em;
 }
 .btn::after {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
-  border-radius: 1.563rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.563em;
   opacity: 0;
   transition: opacity 300ms ease-out;
   will-change: opacity;
-  background-color: #ffffff;
-}
-.btn:hover::before {
-  opacity: 1;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 .btn:hover::after {
-  opacity: 0.15;
+  opacity: 1;
 }
 
 .functioning-cards {
-  border-radius: 1.25rem;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   display: flex;
-  position: relative;
   flex-direction: row;
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-  background-color: #f6f6f6;
-  margin-left: 0.75rem;
-  gap: 1.375rem;
+  justify-content: normal;
   align-items: center;
+  position: relative;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 1.25em;
+  padding: 1.75em 0;
+  margin-left: 0.75em;
+  gap: 1.375em;
 }
 @media (min-width: 850px) {
   .functioning-cards {
@@ -101,17 +91,18 @@ a {
   }
 }
 .functioning-cards__title {
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 500;
 }
 .functioning-cards__number {
   position: relative;
   color: #ffffff;
-  font-size: 0.875rem;
-  padding: 0.25rem 0.5rem;
+  font-size: 0.875em;
+  font-weight: 500;
+  padding: 0.25em 0.5em;
   background-color: #9356dc;
   border-radius: 50%;
-  margin-left: -0.75rem;
+  margin-left: -0.75em;
 }
 
 .restaurants-cards {
@@ -167,7 +158,6 @@ a {
 }
 .restaurants-cards__content .restaurants-cards__subtitle {
   font-size: 1.063em;
-  font-weight: 300;
 }
 
 @keyframes animated-cards {
@@ -321,8 +311,8 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  height: 21px;
   width: 23px;
+  height: 21px;
   background-image: url("./../../assets/images/logo/union.png");
   background-repeat: no-repeat;
   transform: scale(0, 0);
@@ -333,52 +323,45 @@ a {
 }
 
 @keyframes loading {
-  0% {
+  from {
     transform: scaleX(0);
   }
-  100% {
+  to {
     transform: scaleX(1);
   }
 }
-@keyframes contenair {
-  0% {
-    z-index: 9999;
-    opacity: 1;
-  }
-  50% {
-    z-index: 9999;
-    opacity: 1;
-  }
-  100% {
+@keyframes container {
+  to {
+    z-index: -10;
     opacity: 0;
   }
 }
 .loader {
   position: fixed;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  top: 0;
-  left: 0;
+  align-items: center;
   width: 100%;
   height: 100%;
+  z-index: 9999;
+  opacity: 1;
   background-color: #f6f6f6;
-  z-index: -9999;
-  opacity: 0;
-  animation: contenair 2000ms;
+  animation: container 1000ms forwards;
+  animation-delay: 1000ms;
 }
 .loader__border {
-  height: 30px;
-  width: 300px;
-  border-radius: 20px;
+  height: 1.875em;
+  width: 18.75em;
+  border-radius: 1.563em;
   border: solid 2px #ff79da;
-  padding: 4px;
+  padding: 0.25em;
 }
 .loader__bar {
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 1.563em;
   overflow: hidden;
 }
 .loader__bar::after {
@@ -463,10 +446,10 @@ a {
 .footer-content-contenair__link::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 0.125rem;
+  height: 0.125em;
   background-color: #ffffff;
   transform: scaleX(0);
   transform-origin: left;
@@ -503,10 +486,10 @@ a {
 .partnership-contenair__link::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 0.125rem;
+  height: 0.125em;
   background-color: #ffffff;
   transform: scaleX(0);
   transform-origin: left;
@@ -537,10 +520,10 @@ a {
 .contact-contenair__link::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 0.125rem;
+  height: 0.125em;
   background-color: #ffffff;
   transform: scaleX(0);
   transform-origin: left;
@@ -568,6 +551,7 @@ a {
   }
 }
 .location-container__content {
+  font-size: 1em;
   font-weight: 500;
   color: #353535;
 }
@@ -599,8 +583,6 @@ a {
   }
 }
 .main-section__subtitle {
-  font-size: 1.125em;
-  font-weight: 300;
   margin-top: 1em;
   margin-bottom: 1.75em;
   color: #353535;

@@ -12,6 +12,7 @@
     }
 
     &__content {
+        font-size: 1em;
         font-weight: 500;
         color: $secondary-text-color;
     }
@@ -41,8 +42,6 @@
     }
 
     &__subtitle {
-        font-size: 1.125em;
-        font-weight: 300;
         margin-top: 1em;
         margin-bottom: 1.75em;
         color: $secondary-text-color;

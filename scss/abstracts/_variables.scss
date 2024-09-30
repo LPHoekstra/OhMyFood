@@ -16,8 +16,12 @@ $footer-text-color: #ffffff;
 
 $btn-gradient-color: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
 $btn-text-color: #ffffff;
-$btn-hover-color: #ffffff;
+$btn-hover-color: rgb(255, 255, 255, 0.15);
 
 // typography
 $main-font-family: "Roboto", sans-serif;
 $secondary-font-family: "Shrikhand", serif;
+
+// other
+$btn-border-radius: 1.563em;
+

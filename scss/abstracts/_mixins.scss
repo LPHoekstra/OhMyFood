@@ -10,3 +10,12 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin pseudo-elements-absolute-full-size($width: 100%, $height: 100%) {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $width;
+    height: $height;
+}
