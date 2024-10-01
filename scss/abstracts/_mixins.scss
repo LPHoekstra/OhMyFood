@@ -19,3 +19,8 @@
     width: $width;
     height: $height;
 }
+
+%text-overflow-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

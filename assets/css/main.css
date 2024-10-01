@@ -1,3 +1,8 @@
+.menu-header__title, .menu-cards__subtitle, .menu-cards__title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 * {
   margin: 0;
 }
@@ -222,11 +227,6 @@ a {
   animation-delay: 2250ms;
 }
 
-.menu-cards__subtitle, .menu-cards__title {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .menu-cards {
   display: flex;
   border-radius: 0.938em;
@@ -238,7 +238,7 @@ a {
   transform: translateY(-71px);
   text-wrap: nowrap;
 }
-.menu-cards__content-contenair {
+.menu-cards__content-container {
   padding: 0.813em 0.938em;
   flex: 1;
   overflow: hidden;
@@ -248,7 +248,7 @@ a {
   font-size: 1.125em;
   margin-bottom: 0.313em;
 }
-.menu-cards__sub-and-amount-contenair {
+.menu-cards__sub-and-amount-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -596,23 +596,22 @@ a {
   }
 }
 
-.main-img-contenair {
+.presentation-img-container {
   height: 17.125em;
   overflow: hidden;
 }
 @media (min-width: 850px) {
-  .main-img-contenair {
+  .presentation-img-container {
     height: 23.875em;
   }
 }
-
-.main-img {
-  height: 17.125em;
+.presentation-img-container__img {
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
 @media (min-width: 850px) {
-  .main-img {
+  .presentation-img-container__img {
     transform: translateY(-8em);
     height: max(26.6vw, 32em);
   }
@@ -648,8 +647,6 @@ a {
   font-size: 1.75em;
   font-weight: 400;
   text-wrap: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 @media (min-width: 850px) {
   .menu-header {
@@ -665,15 +662,14 @@ a {
     margin-right: auto;
   }
 }
-
-.course-title {
+.course-article__title {
   position: relative;
   font-weight: 300;
   font-size: 1em;
   padding-bottom: 0.563em;
   text-transform: uppercase;
 }
-.course-title::after {
+.course-article__title::after {
   content: "";
   position: absolute;
   top: calc(100% - 3px);
@@ -683,7 +679,7 @@ a {
   background-color: #99e2d0;
 }
 
-.menu-cards-contenair {
+.menu-cards-container {
   display: flex;
   flex-direction: column;
   justify-content: normal;

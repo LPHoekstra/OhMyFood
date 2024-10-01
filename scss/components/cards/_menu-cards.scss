@@ -26,11 +26,6 @@ $next-animation: 0ms;
     $next-animation: $next-animation + $animation-delay;
 }
 
-%text-overflow-ellipsis {
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 .menu-cards {
     display: flex;
     border-radius: $border-radius;
@@ -42,7 +37,7 @@ $next-animation: 0ms;
     transform: translateY(-71px);
     text-wrap: nowrap;
 
-    &__content-contenair {
+    &__content-container {
         padding: 0.813em 0.938em;
         flex: 1;
         overflow: hidden;
@@ -55,7 +50,7 @@ $next-animation: 0ms;
         @extend %text-overflow-ellipsis;
     }
 
-    &__sub-and-amount-contenair {
+    &__sub-and-amount-container {
         @include flex($justify: space-between);
     }
 
